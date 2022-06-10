@@ -1,103 +1,123 @@
 /* =================Fonts ================ */
+
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
 
 /* =================Variables root global styles ================ */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --clr-primary: #698f3f;
-  --clr-primary-light: #beed8c;
-  --clr-grey-1: #102a42;
-  --clr-grey-5: #617d98;
-  --clr-grey-10: #f1f5f8;
-  --clr-White: #fff;
-  --ff-primary: "Catamaran", sans-serif;
-  --ff-secondary: "Grand Hotel", cursive;
-  --transition: all 0.3s linear;
-  --Spacing: 0.25rem;
-  --radius: 9.5rem;
+    --clr-primary: #698f3f;
+    --clr-primary-light: #beed8c;
+    --clr-grey-1: #102a42;
+    --clr-grey-5: #617d98;
+    --clr-grey-10: #f1f5f8;
+    --clr-White: #fff;
+    --ff-primary: "Catamaran", sans-serif;
+    --ff-secondary: "Grand Hotel", cursive;
+    --transition: all 0.3s linear;
+    --Spacing: 0.25rem;
+    --radius: 9.5rem;
 }
 
 body {
-  font-family: var(--ff-primary);
-  background: var(--clr-White);
-  color: var(--clr-grey-1);
-  line-height: 1.5;
-  font-size: 0.875rem;
+    font-family: var(--ff-primary);
+    background: var(--clr-White);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--Spacing);
-  /* The ext-transform only captitalize first letters */
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
+    letter-spacing: var(--Spacing);
+    /* The ext-transform only captitalize first letters */
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
 }
 
 h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 0.875rem;
+    font-size: 0.875rem;
 }
 
 p {
-  margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 @media screen and (min-width:800px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
-  body {
-    font-size: 1rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
 }
 
+
 /* ======  more global css  ======= */
+
+
+/* ------This is the Header saction start----- */
+
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/main-bcg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* animation */
+    overflow-x: hidden;
+}
+
+.banner {
+    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+}
